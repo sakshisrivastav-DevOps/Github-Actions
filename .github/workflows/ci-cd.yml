@@ -1,1 +1,20 @@
+name: CICD
+on: 
+ workflow_dispatch:
 
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+     - name: 
+      steps: echo "code cloned"
+
+  build:
+     runs-on: ubuntu-latest
+     steps:
+       - name:
+         steps:
+  test:
+    runs-on: ubuntu-latest
+    
+         
