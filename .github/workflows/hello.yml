@@ -2,8 +2,8 @@
 name: Hello Workflow
 #runs on an automatic trigger, whenever change is pushes to branch
 on:
-  push:
-    branches: [main]
+  workflow_dispatch: 
+    
     
 #these are jobs inside the workflows
 jobs:
