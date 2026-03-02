@@ -2,9 +2,12 @@
 name: Hello Workflow
 #runs on an automatic trigger, whenever change is pushes to branch
 on:
-  workflow_dispatch: 
+  push: 
+    branches: [main]
     
-    
+    paths:
+      - '**.html'
+      
 #these are jobs inside the workflows
 jobs:
      greet:
