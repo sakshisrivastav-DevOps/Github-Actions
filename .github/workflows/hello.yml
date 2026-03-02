@@ -1,9 +1,10 @@
 #This is workflow name
 name: Hello Workflow
-#runs on a trigger
+#runs on an automatic trigger, whenever change is pushes to branch
 on:
   push:
     branches: [main]
+    
 #these are jobs inside the workflows
 jobs:
      greet:
