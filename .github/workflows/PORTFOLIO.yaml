@@ -1,4 +1,4 @@
-name: Portfolio
+name: PORTFOLIO
 on:
   workflow_dispatch: 
 
@@ -31,8 +31,11 @@ jobs:
         #Step 3
       - name: upload static files
         uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
 
         #step 4
       - name:  deploy to github pages
+        id: deployment
         uses: actions/deploy-pages@v4
        
